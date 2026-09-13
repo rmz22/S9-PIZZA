@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" name="viewport"/>
+<title>S9 PIZZA - Menu</title>
+<!-- Tailwind CSS CDN -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts for Matchioo style typography -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&amp;family=Fredoka:wght@600;700&amp;family=Caveat:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Anton"', 'sans-serif'],
+            brand: ['"Fredoka"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            hand: ['"Caveat"', 'cursive'],
+          },
+          colors: {
+            matchSky: '#5ea2d6',
+            matchSkyDeep: '#498cbf',
+            matchSkyLight: '#8ec4ec',
+            matchCloud: '#f0f7fd',
+            matchDark: '#121212',
+            matchCardBlue: '#a4c6df',
+            matchAccent: '#2c4b63'
+          }
+        }
+      }
+    }
+</script>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
+</head>
+<body class="bg-gradient-to-b from-[#60a5d8] via-[#5297cb] to-[#4387bc] text-slate-800 font-sans antialiased overflow-x-hidden select-none relative min-h-screen">
+<!-- BEGIN: Navigation -->
+<header class="sticky top-0 z-50 px-6 py-4 flex items-center justify-between backdrop-blur-md bg-[#5ea2d6]/40 border-b border-white/20">
+<div class="flex items-center space-x-1.5" data-purpose="brand-logo">
+<span class="font-brand text-2xl tracking-wide font-extrabold text-white drop-shadow-sm">S9 PIZZA</span>
+<span class="w-2.5 h-2.5 rounded-full bg-yellow-300 inline-block animate-pulse shadow-sm"></span>
+</div>
+<div class="flex items-center space-x-2">
+<button aria-label="Menu list" class="flex flex-col justify-center items-end space-y-1.5 w-8 h-8 focus:outline-none pl-1">
+<span class="w-6 h-[3px] bg-white rounded-full transition-all"></span>
+<span class="w-6 h-[3px] bg-white rounded-full transition-all"></span>
+<span class="w-4 h-[3px] bg-white rounded-full transition-all"></span>
+</button>
+</div>
+</header>
+<!-- END: Navigation -->
+<!-- BEGIN: HeroSection -->
+<section class="relative min-h-[640px] pt-5 pb-10 flex flex-col items-center justify-between text-center overflow-hidden">
+
+<!-- Hero Titles -->
+<div class="z-20 px-4 mt-2">
+<h1 class="font-display uppercase text-5xl sm:text-6xl tracking-wide text-white drop-shadow-md leading-[0.92]">
+      OUR SIGNATURE<br/>PIZZAS
+    </h1>
+<p class="text-white/90 text-xs font-semibold tracking-widest uppercase mt-2 drop-shadow-sm">
+      Stone-Baked Daily
+    </p>
+</div>
+<!-- Central Floating Featured Pizza with Clouds -->
+<div class="relative mt-2 w-full flex flex-col items-center justify-center">
+<!-- Cloud Puffs under & around the food cut-out -->
+<div class="absolute -bottom-8 w-80 h-36 cloud-puff rounded-full opacity-95 z-0 pointer-events-none"></div>
+<div class="absolute -bottom-10 -left-6 w-52 h-32 cloud-billow rounded-full opacity-90 z-0 pointer-events-none"></div>
+<div class="absolute -bottom-10 -right-6 w-52 h-32 cloud-billow rounded-full opacity-90 z-0 pointer-events-none"></div>
+<!-- Hand-drawn arrow + note pointing to the pizza -->
+<div class="absolute -left-1 top-24 z-30 flex items-center gap-1 pointer-events-none">
+<span class="font-hand text-white text-xl rotate-[-12deg] drop-shadow-md">Must Try! 🍕</span>
+<svg class="w-8 h-8 text-white rotate-[-20deg]" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24">
+<path d="M3 12h14m-4-5l5 5-5 5"></path>
+</svg>
+</div>
+<!-- The exact transparent chicken pizza cut-out hovering -->
+<div class="relative z-10 w-64 h-64 sm:w-72 sm:h-72 flex items-center justify-center animate-float">
+<img alt="Chicken Supreme Pizza" class="w-60 h-60 sm:w-64 sm:h-64 object-contain filter drop-shadow-[0_20px_25px_rgba(0,0,0,0.32)] transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYwUnnMHYLm9uRyWcvOmifcOFW5NwQ8CY8Ej888VUtZf6W7isMq-zYrLarY7WRlIz5JZBJ00VQzgU-atpKSeJbkkGp5nJvLXqTHkgotuXYra0ULLGFQ3bnFVS1rxvhjf_LOPEQdlzi60lngJ3bfIfI4GhgCwbAGTCal5oMr6zVmTEfav2vax12fWyDyKmDJCeWGpQ-U3Nx9RgrmelkISFWGkqlctCyYWvSC48bonsYFNlgppfqxCCz4LVoiKuLQz5l9aY"/>
+</div>
+<!-- Pill cloud badge framing item name directly beneath the clouds -->
+<div class="relative z-20 -mt-8 px-6 py-2">
+<div class="absolute inset-0 bg-white/80 backdrop-blur-md rounded-full shadow-lg -rotate-1 border border-white/60"></div>
+<div class="relative z-10 text-center px-4 py-1">
+<h2 class="font-display text-2xl sm:text-3xl uppercase tracking-wider text-black leading-none">
+          CHICKEN SUPREME
+        </h2>
+<div class="flex items-center justify-center space-x-2 text-xs font-bold text-slate-800 mt-0.5">
+<span class="text-amber-500">★★★★★</span>
+<span class="bg-black text-white text-[9px] px-2 py-0.5 rounded-full uppercase tracking-wider font-bold">Chef Special</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Looped Squiggle Hearts Doodle -->
+<div class="w-24 h-14 text-white/90 mt-5 z-10 pointer-events-none">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" viewbox="0 0 80 50">
+<path d="M22 8 C18 4, 12 6, 12 12 C12 18, 22 24, 22 24 C22 24, 32 18, 32 12 C32 6, 26 4, 22 8 Z" fill="rgba(255,255,255,0.2)"></path>
+<path d="M22 24 Q22 36 28 38 T36 34"></path>
+<path d="M50 16 C46 12, 42 14, 42 19 C42 24, 50 29, 50 29 C50 29, 58 24, 58 19 C58 14, 54 12, 50 16 Z" fill="rgba(255,255,255,0.2)"></path>
+<path d="M50 29 Q52 42 62 40"></path>
+</svg>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: TickerMarquee -->
+<div class="w-full bg-white/90 backdrop-blur-md text-black py-2.5 overflow-hidden border-y border-white/50 shadow-sm" data-purpose="ticker-strip">
+<div class="animate-marquee font-display text-sm tracking-widest uppercase flex items-center">
+<span class="mx-3">SCROLL DOWN</span>•
+    <span class="mx-3">S9 PIZZA</span>•
+    <span class="mx-3">100% FRESH DOUGH</span>•
+    <span class="mx-3">HANDCRAFTED EVERY DAY</span>•
+    <span class="mx-3">STONE BAKED CRUST</span>•
+    <span class="mx-3">HOT &amp; CRISPY</span>•
+    <span class="mx-3">IN-STORE COUNTER MENU</span>•
+    <span class="mx-3">SCROLL DOWN</span>•
+    <span class="mx-3">S9 PIZZA</span>•
+    <span class="mx-3">100% FRESH DOUGH</span>•
+    <span class="mx-3">HANDCRAFTED EVERY DAY</span>•
+    <span class="mx-3">STONE BAKED CRUST</span>•
+    <span class="mx-3">HOT &amp; CRISPY</span>•
+    <span class="mx-3">IN-STORE COUNTER MENU</span>•
+  </div>
+</div>
+<!-- END: TickerMarquee -->
+
+<!-- BEGIN: CloudProductsMenu -->
+<section class="px-4 py-8 space-y-16 animate-on-scroll" data-purpose="full-menu-section">
+<div class="text-center relative">
+<h3 class="font-display uppercase text-4xl text-white tracking-wide drop-shadow-md">
+      EXPLORE THE MENU
+    </h3>
+<p class="text-white/90 text-xs font-semibold tracking-wider uppercase mt-1">Please Order At The Counter</p>
+<!-- Little hand-drawn swirl doodle under title -->
+<div class="w-16 mx-auto mt-2 text-white">
+<svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" viewbox="0 0 60 12">
+<path d="M2 6 Q 15 0, 30 6 T 58 6"></path>
+</svg>
+</div>
+</div>
+<!-- Product 1: Chicken Supreme Pizza -->
+<div class="relative flex flex-col items-center text-center">
+<!-- Hand written doodle tag -->
+<div class="absolute right-6 top-2 z-20 pointer-events-none animate-float-alt">
+<span class="font-hand text-white text-lg rotate-12 drop-shadow">Fresh Dough! ✨</span>
+</div>
+<!-- Product Image floating on fluffy clouds -->
+<div class="relative w-64 h-56 flex items-center justify-center">
+<!-- Clouds -->
+<div class="absolute bottom-4 w-60 h-24 cloud-puff rounded-full opacity-95 pointer-events-none"></div>
+<div class="absolute bottom-2 -left-4 w-36 h-24 cloud-billow rounded-full opacity-90 pointer-events-none"></div>
+<div class="absolute bottom-2 -right-4 w-36 h-24 cloud-billow rounded-full opacity-90 pointer-events-none"></div>
+<!-- Food Cutout Image -->
+<img alt="Chicken Supreme Pizza" class="relative z-10 w-52 h-52 object-contain filter drop-shadow-[0_18px_20px_rgba(0,0,0,0.3)] animate-float" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjTqJyOmf_JE1Lb9xWC8soD-LX66-CvRJKonYBcuQ_CuW6bO6-asugb7pmtsz6YlNPrQvhShGG0WszHhvDPWjpS2wHgCeNufQLoQBghZlXEBJn0dlYpqAI7SPtRPIKRAj5tl_rKO0exw5SE4Vw4VYUEINTwUHnzScw7-X3gKjKirIBClZz59c_uphs0JQhCcXrq1i0AB0XnHlnRd2NpQjSWXwfzaNC2Y8XNwF3SKiSoQ0ZZBznMr1M_BH_lkFE3WsOjJI"/>
+</div>
+<!-- Label Below Clouds -->
+<div class="relative z-20 mt-1">
+<h4 class="font-display uppercase text-2xl tracking-wide text-white drop-shadow-md">
+        CHICKEN SUPREME PIZZA
+      </h4>
+<div class="flex items-center justify-center space-x-3 mt-1">
+<span class="font-display text-2xl text-white tracking-wider drop-shadow-sm">₹100</span>
+<span class="text-xs font-bold text-white bg-black/50 backdrop-blur-sm px-2.5 py-0.5 rounded-full flex items-center gap-1 border border-white/20">
+<span class="text-amber-300">★</span> 4.9
+        </span>
+</div>
+<p class="text-[11px] text-white/85 font-medium mt-1">Loaded chicken chunks, rich mozzarella, stone baked</p>
+</div>
+</div>
+<!-- Product 2: Veg Delight Pizza -->
+<div class="relative flex flex-col items-center text-center">
+<!-- Hand written doodle note -->
+<div class="absolute left-6 top-4 z-20 pointer-events-none animate-float">
+<span class="font-hand text-white text-lg -rotate-12 drop-shadow">100% Veg 🌱</span>
+</div>
+<!-- Product Image floating on fluffy clouds -->
+<div class="relative w-64 h-56 flex items-center justify-center">
+<div class="absolute bottom-4 w-60 h-24 cloud-puff rounded-full opacity-95 pointer-events-none"></div>
+<div class="absolute bottom-2 -left-4 w-36 h-24 cloud-billow rounded-full opacity-90 pointer-events-none"></div>
+<div class="absolute bottom-2 -right-4 w-36 h-24 cloud-billow rounded-full opacity-90 pointer-events-none"></div>
+<img alt="Veg Delight Pizza" class="relative z-10 w-52 h-52 object-contain filter drop-shadow-[0_18px_20px_rgba(0,0,0,0.3)] animate-float-alt" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9Wi9t6J6kiQDNayNfnDJ1LHAF-zNfzSqOHS7hrBPP7RSGyoGkrTQidjapup2h8QpyGgjW0308AlUGTT8pw1B__bDjV8ppqZu_eRSV6CsfenBnocKGyD_C5S5e3W1XVJcWI8ZCm3E9OAOJGdxD4MT9DqKsGeMqhFeVxktZDxkhLG3uQg9JZfF_vJIGwYGF0FEkdhU5qIlZ2TYicQWdmLxOqUsaMme-oWm_kXvgX6Fm1ohX2mxpNF2DavL16YfNjWBGjNs"/>
+</div>
+<div class="relative z-20 mt-1">
+<h4 class="font-display uppercase text-2xl tracking-wide text-white drop-shadow-md">
+        VEG DELIGHT PIZZA
+      </h4>
+<div class="flex items-center justify-center space-x-3 mt-1">
+<span class="font-display text-2xl text-white tracking-wider drop-shadow-sm">₹90</span>
+<span class="text-xs font-bold text-white bg-black/50 backdrop-blur-sm px-2.5 py-0.5 rounded-full flex items-center gap-1 border border-white/20">
+<span class="text-amber-300">★</span> 4.8
+        </span>
+</div>
+<p class="text-[11px] text-white/85 font-medium mt-1">Crisp bell peppers, sweet corn, fresh basil &amp; olives</p>
+</div>
+</div>
+<!-- Product 3: Crispy Chicken Burger -->
+<div class="relative flex flex-col items-center text-center">
+<!-- Hand written doodle note -->
+<div class="absolute right-4 top-2 z-20 pointer-events-none animate-float">
+<span class="font-hand text-white text-lg rotate-6 drop-shadow">Extra Crispy! 🔥</span>
+</div>
+<!-- Product Image floating on fluffy clouds -->
+<div class="relative w-64 h-56 flex items-center justify-center">
+<div class="absolute bottom-4 w-60 h-24 cloud-puff rounded-full opacity-95 pointer-events-none"></div>
+<div class="absolute bottom-2 -left-4 w-36 h-24 cloud-billow rounded-full opacity-90 pointer-events-none"></div>
+<div class="absolute bottom-2 -right-4 w-36 h-24 cloud-billow rounded-full opacity-90 pointer-events-none"></div>
+<img alt="Crispy Chicken Burger" class="relative z-10 w-48 h-48 object-contain filter drop-shadow-[0_18px_20px_rgba(0,0,0,0.3)] animate-float" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBVqnMKwTvdsANNOenr9Ph6nCi1R7sKgqILjrI1o1sRJ9L7Mw4rAhTwWfeZS9QQnyQ8imjv668VdlTKI2Gq1RlSNYnHYZzbJkpj7wRx_8LtKonVoGVEFJjRCzcc-hlBRRaV9gjZHUwcBr8j4AemWWqjZ1Wx62o5ZKGNxwTRGMyFLas2r-_zE_6z3jf0fTMVgmmAe-Iaisf7izEZTg-TB8VkcyyBtZ_b3vIVpSplJ6YB6p-BLPl7yFfe_DZxneSjtCizlL8"/>
+</div>
+<div class="relative z-20 mt-1">
+<h4 class="font-display uppercase text-2xl tracking-wide text-white drop-shadow-md">
+        CRISPY CHICKEN BURGER
+      </h4>
+<div class="flex items-center justify-center space-x-3 mt-1">
+<span class="font-display text-2xl text-white tracking-wider drop-shadow-sm">₹60</span>
+<span class="text-xs font-bold text-white bg-black/50 backdrop-blur-sm px-2.5 py-0.5 rounded-full flex items-center gap-1 border border-white/20">
+<span class="text-amber-300">★</span> 5.0
+        </span>
+</div>
+<p class="text-[11px] text-white/85 font-medium mt-1">Toasted sesame bun, double melted cheese &amp; spicy crunch</p>
+</div>
+</div>
+<!-- Product 4: Steamed Chicken Momo -->
+<div class="relative flex flex-col items-center text-center">
+<!-- Hand written doodle note -->
+<div class="absolute left-6 top-3 z-20 pointer-events-none animate-float-alt">
+<span class="font-hand text-white text-lg -rotate-6 drop-shadow">Super Juicy! 🥟</span>
+</div>
+<!-- Product Image floating on fluffy clouds -->
+<div class="relative w-64 h-56 flex items-center justify-center">
+<div class="absolute bottom-4 w-60 h-24 cloud-puff rounded-full opacity-95 pointer-events-none"></div>
+<div class="absolute bottom-2 -left-4 w-36 h-24 cloud-billow rounded-full opacity-90 pointer-events-none"></div>
+<div class="absolute bottom-2 -right-4 w-36 h-24 cloud-billow rounded-full opacity-90 pointer-events-none"></div>
+<img alt="Steamed Chicken Momo" class="relative z-10 w-52 h-52 object-contain filter drop-shadow-[0_18px_20px_rgba(0,0,0,0.3)] animate-float" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBcTljnmxhnDuQ1h3WIm4o8dglg3ffDwWjnFAQlD950EGs6P2wiIFirQayqJ_P0-1XHc8QWvrxBjX2wU2XrdlydbQPzNT4o1lAyd37cS0UzkV5la3Gvz5_aQuaUxta-sKBCzBUOJOGGgipVkWLfwqGMH__YuoYl52rytyuCBGfWhZSvoVkLRgxT0NtyQMut2nGQwDHoOiR7-0SKSmoudqG-ha5TwP5lS0aDnH855qhx1vdU827wx2U2cnHUV6lFiLPMmeU"/>
+</div>
+<div class="relative z-20 mt-1">
+<h4 class="font-display uppercase text-2xl tracking-wide text-white drop-shadow-md">
+        STEAMED CHICKEN MOMO
+      </h4>
+<div class="flex items-center justify-center space-x-3 mt-1">
+<span class="font-display text-2xl text-white tracking-wider drop-shadow-sm">₹50</span>
+<span class="text-xs font-bold text-white bg-black/50 backdrop-blur-sm px-2.5 py-0.5 rounded-full flex items-center gap-1 border border-white/20">
+<span class="text-amber-300">★</span> 4.9
+        </span>
+</div>
+<p class="text-[11px] text-white/85 font-medium mt-1">Thin wrapper, juicy filling served with spicy garlic dip</p>
+</div>
+</div>
+<!-- Matchioo Style Pill Button -->
+<div class="flex justify-center pt-2">
+<button class="bg-[#1f2937] hover:bg-black text-white font-bold text-xs uppercase tracking-widest px-8 py-3.5 rounded-full shadow-xl transition-all transform active:scale-95 border border-white/20">
+      FULL KITCHEN READY
+    </button>
+</div>
+</section>
+<!-- END: CloudProductsMenu -->
+
+<!-- BEGIN: MorningSpecials -->
+<section class="px-5 py-6 animate-on-scroll" data-purpose="morning-specials">
+<div class="bg-white/95 backdrop-blur-md rounded-3xl p-6 shadow-xl border border-white/70 relative overflow-hidden">
+<!-- Corner doodle sticker -->
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-amber-100/50 rounded-full pointer-events-none"></div>
+<div class="flex items-center justify-between border-b border-slate-200 pb-3 mb-4">
+<div>
+<span class="text-[10px] font-extrabold uppercase tracking-widest text-amber-700 bg-amber-100 px-2.5 py-0.5 rounded-full">Available 7 AM - 11 AM</span>
+<h4 class="font-display uppercase text-2xl text-slate-900 tracking-wide mt-1">MORNING SPECIALS</h4>
+</div>
+<div class="text-3xl animate-bounce">☕</div>
+</div>
+<div class="space-y-4">
+<!-- Morning Item 1 -->
+<div class="flex items-center justify-between py-1.5 border-b border-dashed border-slate-200">
+<div class="text-left">
+<p class="font-bold text-slate-900 text-sm">Authentic Kulhad Chai</p>
+<p class="text-[11px] text-slate-500 font-medium">Fresh brewed ginger &amp; cardamom in earthen cup</p>
+</div>
+</div>
+<!-- Morning Item 2 -->
+<div class="flex items-center justify-between py-1.5 border-b border-dashed border-slate-200">
+<div class="text-left">
+<p class="font-bold text-slate-900 text-sm">Golden Kochuri with Sabzi</p>
+<p class="text-[11px] text-slate-500 font-medium">Served piping hot with spicy hing aloo dum</p>
+</div>
+</div>
+<!-- Morning Item 3 -->
+<div class="flex items-center justify-between py-1.5">
+<div class="text-left">
+<p class="font-bold text-slate-900 text-sm">Seasoned Boiled Egg</p>
+<p class="text-[11px] text-slate-500 font-medium">Sprinkled with black salt, pepper &amp; chat masala</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: MorningSpecials -->
+
+<!-- BEGIN: Testimonials -->
+<section class="px-5 py-6 space-y-3 animate-on-scroll" data-purpose="testimonials">
+<div class="text-center mb-4 relative">
+<h3 class="font-display uppercase text-3xl text-white tracking-wide drop-shadow-sm">WHAT LOCAL FOODIES SAY</h3>
+<span class="font-hand text-white/90 text-sm">real love from our customers</span>
+</div>
+<!-- Review Card 1 -->
+<div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-md text-left flex items-start space-x-3 border border-white/60">
+<div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center font-bold text-emerald-800 text-sm shrink-0 shadow-inner">
+      AM
+    </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h5 class="font-bold text-slate-900 text-sm">Ananya Mukherjee</h5>
+<span class="text-xs font-bold text-amber-500">★★★★★ <span class="text-slate-700 text-[11px]">5.0</span></span>
+</div>
+<p class="text-xs text-slate-600 mt-1 leading-relaxed font-medium">
+        "The Chicken Supreme is loaded and the cheese pull is pure heaven. Truly the best pizza counter!"
+      </p>
+</div>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-white/95 backdrop-blur-md rounded-2xl p-4 shadow-md text-left flex items-start space-x-3 border border-white/60">
+<div class="w-10 h-10 rounded-full bg-blue-100 flex items-center justify-center font-bold text-blue-800 text-sm shrink-0 shadow-inner">
+      RD
+    </div>
+<div class="flex-1">
+<div class="flex items-center justify-between">
+<h5 class="font-bold text-slate-900 text-sm">Rohan Das</h5>
+<span class="text-xs font-bold text-amber-500">★★★★★ <span class="text-slate-700 text-[11px]">5.0</span></span>
+</div>
+<p class="text-xs text-slate-600 mt-1 leading-relaxed font-medium">
+        "Super crispy chicken burgers and hot kulhad chai in morning. Fast service right on Aurobindo Road."
+      </p>
+</div>
+</div>
+</section>
+<!-- END: Testimonials -->
+
+<!-- BEGIN: MeetChefCommunity -->
+<section class="px-5 py-6 animate-on-scroll">
+<div class="bg-[#1f2937]/95 backdrop-blur-md rounded-3xl p-6 text-white text-center shadow-xl border border-white/20 relative">
+<!-- Chef Hat Doodle -->
+<div class="w-16 h-16 rounded-full bg-gradient-to-tr from-amber-400 to-yellow-200 mx-auto flex items-center justify-center text-3xl shadow-inner mb-3">
+      👨‍🍳
+    </div>
+<h4 class="font-display uppercase text-2xl tracking-wider">SUMIT MONDAL</h4>
+<p class="text-xs font-bold text-yellow-300 uppercase tracking-widest mt-0.5">Owner &amp; Head Chef</p>
+<p class="text-xs text-slate-300 leading-relaxed mt-3 max-w-xs mx-auto">
+      "Every single pizza crust is rolled with patience, topped generously, and baked fresh on order. We love serving our community!"
+    </p>
+<div class="mt-4 pt-4 border-t border-white/10 flex justify-around text-xs font-semibold text-slate-300">
+<div>
+<span class="block text-white font-bold text-sm">7 Days</span> Open All Week
+      </div>
+<div class="h-8 w-[1px] bg-white/20"></div>
+<div>
+<span class="block text-white font-bold text-sm">100% Fresh</span> Daily Handcrafted
+      </div>
+</div>
+</div>
+</section>
+<!-- END: MeetChefCommunity -->
+
+<!-- BEGIN: LocationFindUs -->
+<section class="px-5 py-6 animate-on-scroll">
+<div class="bg-[#a4c6df] text-slate-900 rounded-3xl p-6 text-center shadow-lg border border-white/80" data-purpose="location-card">
+<p class="text-[11px] font-extrabold uppercase tracking-widest text-[#2c4b63]">VISIT OUR COUNTER</p>
+<h3 class="font-display uppercase text-3xl text-slate-950 mt-1 tracking-wide">FIND US</h3>
+<p class="font-bold text-sm text-slate-900 mt-2 leading-snug">
+      Aurobindo Road, Maslandapur - Tentulia Rd,<br/>
+      Maslandapur, West Bengal 743289
+    </p>
+<div class="mt-5 flex flex-col gap-2.5">
+<a class="bg-[#2c4b63] hover:bg-[#1f374a] text-white font-display text-sm uppercase tracking-widest py-3 px-6 rounded-2xl shadow-md transition-transform active:scale-95 inline-block text-center" href="https://maps.app.goo.gl/6ZzTQmL2ogt9op9G7" rel="noopener noreferrer" target="_blank">
+        LOCATE ON MAP 📍
+      </a>
+<a class="bg-white hover:bg-white/90 text-slate-900 font-bold text-xs py-2.5 px-4 rounded-xl flex items-center justify-center gap-2 shadow-sm" href="tel:+919679608736">
+<span>📞 Hotline:</span> +91 96796 08736
+      </a>
+</div>
+</div>
+</section>
+<!-- END: LocationFindUs -->
+
+<!-- BEGIN: Footer -->
+<footer class="bg-white text-slate-900 pt-10 pb-12 px-6 rounded-t-[36px] mt-8 text-center shadow-2xl animate-on-scroll" data-purpose="site-footer">
+<h2 class="font-display uppercase text-3xl tracking-wider text-black">S9 PIZZA</h2>
+<p class="text-xs text-slate-500 font-medium mt-1">Your Favorite Street Kitchen</p>
+
+<!-- Mandatory Developer Credit -->
+<div class="bg-white/80 backdrop-blur-sm border border-slate-200/60 rounded-3xl p-5 max-w-sm mx-auto mb-8 shadow-sm flex flex-col items-center justify-center space-y-3">
+  <div class="flex items-center space-x-2">
+    <div class="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
+    <p class="text-xs font-bold text-slate-500 uppercase tracking-widest">Designed &amp; Developed by</p>
+  </div>
+  <h4 class="font-display text-2xl text-slate-800 tracking-wide">Rupayan</h4>
+  <a class="group relative inline-flex items-center justify-center gap-2 px-6 py-2.5 bg-slate-900 text-white rounded-full text-xs font-bold uppercase tracking-wider overflow-hidden transition-all hover:bg-slate-800 hover:shadow-md hover:-translate-y-0.5" href="https://linktr.ee/yaanrup" rel="noopener noreferrer" target="_blank">
+    <span>Find Rupayan</span>
+    <svg class="w-3.5 h-3.5 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewbox="0 0 24 24"><path d="M14 5l7 7m0 0l-7 7m7-7H3" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5"></path></svg>
+  </a>
+</div>
+<p class="text-[11px] text-slate-400 font-medium leading-relaxed">
+    © 2026 S9 PIZZA. All rights reserved.<br/>Fresh counter menu viewing experience.
+  </p>
+</footer>
+<!-- END: Footer -->
+</body></html>
